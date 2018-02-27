@@ -1,0 +1,7 @@
+{
+  "name": "my-site",
+  "short_name": "my-site",
+  "description": "A simple personal website ",
+  "start_url": "/",
+  "display": "standalone"
+}
