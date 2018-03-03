@@ -14,6 +14,16 @@
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
+        /* Define a document-wide default—will not override a :host rule in  */
+        html {
+          font-family: sans-serif;
+        }
+        /* Override the value specified in demo-element */
+        demo-snippet {
+          --icon-toggle-color: green;
+          --icon-toggle-outline-color: black;
+          --icon-toggle-pressed-color: red;
+        }
       </style>
     </custom-style>
   </head>
