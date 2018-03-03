@@ -23,7 +23,7 @@
     </style>
 
     <!-- Shadow DOM goes here -->
-    <iron-icon icon="[[toggleIcon]]">
+    <iron-icon icon="[[toggleIcon]]" on-click="toggle">
     </iron-icon>
 
   </template>
@@ -64,6 +64,10 @@
 
       constructor(){
         super();
+      }
+
+      toggle() {
+        this.pressed = !this.pressed;
       }
     }
 
