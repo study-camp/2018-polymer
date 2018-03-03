@@ -147,7 +147,7 @@ Also check out these older codelabs - note they are Polymer 1.0 but I hope to
 
 Additional Tutorials to explore
 
- 1. [Build an Element | Build an App](https://www.polymer-project.org/2.0/start/) - the starting point for learning the basics
+ 1. [Build an Element](https://www.polymer-project.org/2.0/start/first-element/intro) | [Build an App](https://www.polymer-project.org/2.0/start/toolbox/set-up) - the starting point for learning the basics
  2. [Using the News App](https://news-docs.polymer-project.org/docs/using.html) where you can explore and customize the implementation behind the [design](https://www.polymer-project.org/2.0/toolbox/news-case-study)
 
 

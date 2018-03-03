@@ -1,0 +1,54 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="icon-toggle">
+
+  <!-- SHADOW DOM! -->
+  <template>
+    <!-- Shadow DOM Styles go here -->
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <!-- Shadow DOM goes here -->
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+
+  <!-- CUSTOM ELEMENT CLASS -->
+  <script>
+    /**
+     * `icon-toggle`
+     * A button with an icon, whose state can be toggled
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class IconToggle extends Polymer.Element {
+
+      static get is() {
+        return 'icon-toggle';
+      }
+
+      constructor(){
+        super();
+      }
+
+      static get properties() {
+
+        return {
+          prop1: {
+            type: String,
+            value: 'icon-toggle'
+          }
+        };
+
+      }
+    }
+
+    window.customElements.define(IconToggle.is, IconToggle);
+  </script>
+
+</dom-module>
