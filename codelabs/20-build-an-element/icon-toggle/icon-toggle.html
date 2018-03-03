@@ -23,7 +23,9 @@
     </style>
 
     <!-- Shadow DOM goes here -->
-    <iron-icon icon="polymer"> </iron-icon>
+    <iron-icon icon="[[toggleIcon]]">
+    </iron-icon>
+
   </template>
 
 
@@ -41,6 +43,23 @@
 
       static get is() {
         return 'icon-toggle';
+      }
+
+      static get properties() {
+        return {
+
+          toggleIcon: {
+            type: String
+          },
+
+          pressed: {
+            type: Boolean,
+            notify: true,
+            reflectToAttribute: true,
+            value: false
+          },
+
+        }
       }
 
       constructor(){
