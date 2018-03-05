@@ -14,3 +14,9 @@ Create a simple custom element (button with icon) with an associated UI behavior
 
 
 #### [Build an App Tutorial](https://www.polymer-project.org/2.0/start/toolbox/set-up) / [code](20-build-an-app/my-starter-app)
+
+Creates a app-layout with slide-out drawer (sidebar) and multi-route (navigation) using the [iron-pages](https://www.webcomponents.org/element/PolymerElements/iron-pages) element. The latter is effectively a container associated with multiple children "pages", one of which is selected to be shown at any given time. By binding this selection to the route, we effectively get a single-page app. 
+
+The starter-kit scaffolding automatically provides progressive web apps support (manifest.json, service workers, PRPL pattern lazy loading etc.) -- the lazy loading is achieved by defining related [fragments](https://www.polymer-project.org/2.0/docs/tools/polymer-json#fragments) in _polymer.json_
+
+

@@ -88,6 +88,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a name="view1" href="[[rootPath]]view1">View One</a>
           <a name="view2" href="[[rootPath]]view2">View Two</a>
           <a name="view3" href="[[rootPath]]view3">View Three</a>
+          <a name="surprise" href="[[rootPath]]surprise">View Surprise</a>
         </iron-selector>
       </app-drawer>
 
@@ -109,6 +110,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <my-view1 name="view1"></my-view1>
           <my-view2 name="view2"></my-view2>
           <my-view3 name="view3"></my-view3>
+          <my-surprise name="surprise"></my-surprise>
           <my-view404 name="view404"></my-view404>
         </iron-pages>
       </app-header-layout>
@@ -145,7 +147,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       _routePageChanged(page) {
-        // If no page was found in the route data, page will be an empty string.
+        // If no page was found in the route data,
+        // page will be an empty string.
         // Default to 'view1' in that case.
         this.page = page || 'view1';
 
@@ -156,7 +159,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       _pageChanged(page) {
-        // Load page import on demand. Show 404 page if fails
+        // Load page import on demand.
+        // Show 404 page if fails
         const resolvedPageUrl = this.resolveUrl('my-' + page + '.html');
         Polymer.importHref(
             resolvedPageUrl,
