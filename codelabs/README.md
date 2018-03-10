@@ -20,3 +20,8 @@ Creates a app-layout with slide-out drawer (sidebar) and multi-route (navigation
 The starter-kit scaffolding automatically provides progressive web apps support (manifest.json, service workers, PRPL pattern lazy loading etc.) -- the lazy loading is achieved by defining related [fragments](https://www.polymer-project.org/2.0/docs/tools/polymer-json#fragments) in _polymer.json_
 
 
+#### [Build a Google Drive Client](https://codelabs.developers.google.com/codelabs/polymer-drive-client/index.html) / [code](20-build-an-app/google-drive-client)
+
+Inspired by the [_Google NLP From Sheets_](https://bit.ly/nlp-from-sheets) post, I wanted to explore how to build an application that could use Google Forms (to accept inputs), Google Sheets (to store responses) and Google Cloud ML (to analyze insights) -- and potentially have the resulting stored data used to power a simply Polymer-driven application.
+
+As a starting point, this exercise will explore the existing (2016) codelab for Google Drive components, to see if they are still viable with Polymer 2.0. However, I will be using the _starter-kit_ scaffold to replicate that exercise.
